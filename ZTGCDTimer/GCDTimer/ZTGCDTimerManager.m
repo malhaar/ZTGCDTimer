@@ -8,6 +8,9 @@
 
 #import "ZTGCDTimerManager.h"
 
+#define BIWeakObj(o)   @autoreleasepool {} __weak typeof(o) o ## Weak = o;
+#define kStringIsEmpty(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length] < 1 ? YES : NO )
+
 @interface ZTGCDTimerManager ()
 
 @property (nonatomic, strong) NSMutableDictionary *timerArry;

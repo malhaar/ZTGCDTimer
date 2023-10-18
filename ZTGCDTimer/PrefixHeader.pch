@@ -16,7 +16,7 @@
 #define KS_Width   [UIScreen mainScreen].bounds.size.width
 #define KS_Heigth  [UIScreen mainScreen].bounds.size.height
 
-#define BIWeakObj(o)   @autoreleasepool {} __weak typeof(o) o ## Weak = o;
-#define kStringIsEmpty(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length] < 1 ? YES : NO )
+//#define BIWeakObj(o)   @autoreleasepool {} __weak typeof(o) o ## Weak = o;
+//#define kStringIsEmpty(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length] < 1 ? YES : NO )
 
 #endif /* PrefixHeader_pch */
